@@ -119,7 +119,7 @@ namespace Backend.Controllers
             return Ok(filteredVehicles.ToList());
         }
 
-          [HttpGet("search/{contractId}")]
+          [HttpGet("{contractId}")]
     public ActionResult<Vehicle> GetVehicleByContractId(int contractId)
     {
         var vehicles = ReadJsonData(); // อ่านข้อมูลจากไฟล์หรือฐานข้อมูล

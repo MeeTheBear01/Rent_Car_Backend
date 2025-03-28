@@ -43,14 +43,71 @@
         }
       }
     },
-    "/api/Vehicles/{id}": {
+    "/api/Vehicles/search": {
+      "post": {
+        "tags": [
+          "Vehicles"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VehicleFilterRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VehicleFilterRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VehicleFilterRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Vehicle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Vehicle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Vehicle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Vehicles/{contractId}": {
       "get": {
         "tags": [
           "Vehicles"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "contractId",
             "in": "path",
             "required": true,
             "schema": {
@@ -168,6 +225,24 @@
           },
           "rentalContract": {
             "$ref": "#/components/schemas/RentalContract"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VehicleFilterRequest": {
+        "type": "object",
+        "properties": {
+          "customerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDateStr": {
+            "type": "string",
+            "nullable": true
+          },
+          "endDateStr": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

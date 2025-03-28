@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\nasza\\source\\repos\\Backend\\Backend\\Backend.csproj": {}
+    "D:\\.Net_Web\\Backend\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "c:\\Users\\nasza\\source\\repos\\Backend\\Backend\\Backend.csproj": {
+    "D:\\.Net_Web\\Backend\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nasza\\source\\repos\\Backend\\Backend\\Backend.csproj",
+        "projectUniqueName": "D:\\.Net_Web\\Backend\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "c:\\Users\\nasza\\source\\repos\\Backend\\Backend\\Backend.csproj",
-        "packagesPath": "C:\\Users\\nasza\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nasza\\source\\repos\\Backend\\Backend\\obj\\",
+        "projectPath": "D:\\.Net_Web\\Backend\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\Meethebear\\.nuget\\packages\\",
+        "outputPath": "D:\\.Net_Web\\Backend\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nasza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Meethebear\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -53,10 +54,6 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
-            },
-            "System.Text.Json": {
-              "target": "Package",
-              "version": "[9.0.3, )"
             }
           },
           "imports": [
@@ -78,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
