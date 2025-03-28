@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "licensePlate": "กท-1234",
+        "brand": "Toyota",
+        "model": "Fortuner",
+        "rentalContract": {
+            "id": 101,
+            "customerName": "สมพงษ์  สมศรี",
+            "startDate": "2025-03-1T17:09:34.922Z",
+            "endDate": "2025-03-1T17:09:34.922Z"
+        }
+    },
+    {
+        "id": 2,
+        "licensePlate": "กจ-5678",
+        "brand": "Honda",
+        "model": "Civic",
+        "rentalContract": {
+            "id": 102,
+            "customerName": "Jane Smith",
+            "startDate": "2024-05-15T17:09:34.922Z",
+            "endDate": "2024-11-15T17:09:34.922Z"
+        }
+    }
+]
