@@ -38,3 +38,4 @@ c:\Users\nasza\source\repos\Backend\Backend\bin\Debug\net8.0\System.Text.Encodin
 c:\Users\nasza\source\repos\Backend\Backend\bin\Debug\net8.0\System.Text.Json.dll
 c:\Users\nasza\source\repos\Backend\Backend\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 c:\Users\nasza\source\repos\Backend\Backend\bin\Debug\net8.0\vehicles.json
+c:\Users\nasza\source\repos\Backend\Backend\obj\Debug\net8.0\Backend.sourcelink.json
