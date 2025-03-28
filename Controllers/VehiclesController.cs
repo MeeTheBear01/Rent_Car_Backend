@@ -118,5 +118,21 @@ namespace Backend.Controllers
             // ส่งผลลัพธ์ที่กรองแล้ว
             return Ok(filteredVehicles.ToList());
         }
+
+          [HttpGet("search/{contractId}")]
+    public ActionResult<Vehicle> GetVehicleByContractId(int contractId)
+    {
+        var vehicles = ReadJsonData(); // อ่านข้อมูลจากไฟล์หรือฐานข้อมูล
+
+        // ค้นหายานพาหนะที่มี RentalContract.Id ตรงกับ contractId ที่ส่งมา
+        var vehicle = vehicles.FirstOrDefault(v => v.RentalContract.Id == contractId);
+
+        if (vehicle == null)
+        {
+            return NotFound($"Vehicle with ContractId {contractId} not found.");
+        }
+
+        return Ok(vehicle);  // ส่งคืนข้อมูลยานพาหนะที่ตรงกับ ContractId
+    }
     }
 }
